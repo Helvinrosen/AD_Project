@@ -1,0 +1,48 @@
+.prodcontainer
+{
+    background-color: #f0f0f0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:60rem;
+    width: 100%;
+   
+}
+.cardcontainer
+{
+    justify-content: center;
+    background-color: #f0f0f0; 
+    display: grid;
+    grid-column: inherit;
+    align-items: center;
+    height: 60rem;
+    width: 100%;
+}
+.cardbox
+{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    
+}
+.hover-div {
+    /* width: 200px;
+    height: 200px; */
+    /* background-color: white; */
+    transition:  transform 0.3s; /* Smooth transition */
+  }
+
+  .hover-div:hover {
+     /* Changes background color on hover */
+    transform: scale(1.1); /* Slightly scales up the div on hover */
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(100px); /* Initially moved down */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+  }
+  
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0); /* Moves to original position */
+  }

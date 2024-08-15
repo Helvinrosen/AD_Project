@@ -1,0 +1,92 @@
+.registercontainer {
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.paper {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.regsectioncontainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.section1reg {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px; /* Added max-width */
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.domreg {
+  display: grid;
+  place-items: center;
+  background-color: white;
+  padding: 1rem;
+  margin-top: 2vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.regstyle {
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 4vh;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .regstyle {
+    font-size: 3vh;
+  }
+
+  .section1reg {
+    width: 90%;
+    padding: 10px; /* Reduced padding for small screens */
+  }
+
+  .paper {
+    width: 100%;
+  }
+
+  .domreg {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 960px) {
+  .regstyle {
+    font-size: 3.5vh;
+  }
+
+  .section1reg {
+    width: 70%;
+  }
+
+  .paper {
+    width: 70%;
+  }
+
+  .domreg {
+    width: 100%;
+  }
+}
+
+@media (min-width: 960px) {
+  .section1reg {
+    width: 50vh;
+  }
+}
